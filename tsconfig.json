@@ -1,13 +1,18 @@
 {
   "compilerOptions": {
     "moduleResolution": "node",
-    "declaration": false,
-    "removeComments": false,
-    "pretty": false,
-    "outDir": "dist",
+    "declaration": true,
+    "outDir": "./dist",
+    "declarationDir": "./dist",
+    "removeComments": true,
+    "pretty": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
     "esModuleInterop": true,
     "module": "commonjs",
-    "target": "es2019",
+    "target": "esnext",
     "lib": [
       "esnext",
       "esnext.array",
@@ -15,15 +20,20 @@
       "esnext.intl",
       "esnext.symbol"
     ],
-    "noImplicitAny": true,
-    "sourceMap": false,
+    "sourceMap": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": "./src/",
+    "resolveJsonModule": true,
+    "rootDir": "src",
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["*"]
-    }
+      "@/*": ["./*"]
+    },
   },
   "exclude": [
-    "tests"
+    "tests",
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*"
   ]
 }
