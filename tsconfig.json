@@ -1,9 +1,24 @@
 {
   "compilerOptions": {
     "moduleResolution": "node",
+    "outDir": "dist",
+    "declarationDir": "dist",
+    "module": "commonjs",
+    "target": "esnext",
+    "rootDir": "src",
+    "baseUrl": "src",
+    "lib": [
+      "DOM",
+      "esnext",
+      "esnext.array",
+      "esnext.asynciterable",
+      "esnext.intl",
+      "esnext.symbol"
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    },
     "declaration": true,
-    "outDir": "./dist",
-    "declarationDir": "./dist",
     "removeComments": true,
     "pretty": true,
     "strict": true,
@@ -11,23 +26,9 @@
     "noImplicitThis": true,
     "noImplicitAny": true,
     "esModuleInterop": true,
-    "module": "commonjs",
-    "target": "esnext",
-    "lib": [
-      "esnext",
-      "esnext.array",
-      "esnext.asynciterable",
-      "esnext.intl",
-      "esnext.symbol"
-    ],
     "sourceMap": true,
     "skipDefaultLibCheck": true,
     "resolveJsonModule": true,
-    "rootDir": "src",
-    "baseUrl": "src",
-    "paths": {
-      "@/*": ["./*"]
-    },
   },
   "exclude": [
     "tests",
