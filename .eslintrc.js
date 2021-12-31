@@ -6,7 +6,8 @@ module.exports = {
   env: {
     es6: true,
     node: true,
-    browser: true
+    browser: true,
+    jest: true
   },
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'prettier'],
