@@ -52,5 +52,8 @@
     "*.{js,ts,jsx,tsx}": [
       "eslint --fix"
     ]
+  },
+  "dependencies": {
+    "@edqe/eslint-config": "1.0.0"
   }
 }
